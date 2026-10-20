@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#285943">
+    <meta name="description" content="好好意语 A1 互动练习：STARE — Come stai?（你怎么样？）">
+    <title>STARE — Come stai?（你怎么样？）｜好好意语</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="#main-content" aria-label="跳到好好意语练习内容">
+          <span class="brand-mark" aria-hidden="true">H</span>
+          <span>
+            <strong>好好意语</strong>
+            <small>HAOHAO ITALIANO</small>
+          </span>
+        </a>
+        <button class="restart-link" id="restart-top" type="button">Ricomincia（重新开始）</button>
+      </header>
+
+      <section class="exercise-card" id="main-content" aria-labelledby="exercise-title">
+        <div id="quiz-view">
+          <div class="eyebrow-row">
+            <p class="eyebrow">A1 · GRAMMATICA｜语法</p>
+            <p class="progress" id="progress" aria-live="polite">1 / 8</p>
+          </div>
+
+          <div class="progress-track" aria-hidden="true">
+            <span id="progress-bar"></span>
+          </div>
+
+          <div class="title-block">
+            <p class="part-label" id="part-label">PARTE 1｜第一部分</p>
+            <h1 id="exercise-title">STARE</h1>
+            <p class="subtitle">Come stai?（你怎么样？）</p>
+          </div>
+
+          <div class="instruction-block">
+            <h2 id="instruction-it">Scegli la forma corretta.</h2>
+            <p id="instruction-zh">选择正确的动词变位。</p>
+          </div>
+
+          <section class="question-panel" aria-labelledby="question-text">
+            <p class="question-number" id="question-number">DOMANDA 1｜第 1 题</p>
+            <h2 class="question-text" id="question-text">Io ___ bene, grazie.</h2>
+            <div class="options" id="options" role="group" aria-labelledby="question-text"></div>
+            <div class="feedback" id="feedback" aria-live="assertive" hidden></div>
+            <button class="primary-button" id="continue-button" type="button" hidden>
+              Continua（继续）
+              <span aria-hidden="true">→</span>
+            </button>
+          </section>
+        </div>
+
+        <section class="completion" id="completion-view" aria-labelledby="completion-title" hidden>
+          <div class="celebration" aria-hidden="true">✓</div>
+          <p class="eyebrow completion-eyebrow">ESERCIZIO COMPLETATO｜练习已完成</p>
+          <h1 id="completion-title">Bravissimo/a! Hai completato l'esercizio!（太棒了！你已完成练习！）</h1>
+
+          <div class="conjugation-wrap">
+            <h2>Da ricordare（需要记住的知识）</h2>
+            <table>
+              <thead>
+                <tr><th scope="col">Persona（人称）</th><th scope="col">STARE</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>io（我）</td><td>sto</td></tr>
+                <tr><td>tu（你）</td><td>stai</td></tr>
+                <tr><td>lui / lei（他 / 她）</td><td>sta</td></tr>
+                <tr><td>noi（我们）</td><td>stiamo</td></tr>
+                <tr><td>voi（你们）</td><td>state</td></tr>
+                <tr><td>loro（他们 / 她们）</td><td>stanno</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="review-box useful-expressions">
+            <h2>Espressioni utili（实用表达）</h2>
+            <ul>
+              <li><strong>Come stai?</strong> = 你怎么样？</li>
+              <li><strong>Sto bene.</strong> = 我很好。</li>
+              <li><strong>Sto molto bene.</strong> = 我非常好。</li>
+              <li><strong>Sto abbastanza bene.</strong> = 我挺好的。</li>
+              <li><strong>Sto così così.</strong> = 我一般般。</li>
+              <li><strong>Sto male.</strong> = 我不舒服。</li>
+            </ul>
+          </div>
+
+          <button class="primary-button restart-button" id="restart-bottom" type="button">
+            Ricomincia（重新开始）
+            <span aria-hidden="true">↻</span>
+          </button>
+        </section>
+      </section>
+
+      <footer>好好意语 · Italiano passo dopo passo（一步一步学意大利语）</footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
